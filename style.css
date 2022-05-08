@@ -1,0 +1,55 @@
+#loading
+{
+    height: 100%;
+}
+.spinner
+{
+    height: 100px;
+    width: 100px;
+    border: 10px #9356DC ;
+    border-style: double solid;
+    border-radius: 50%;
+    margin: auto;
+    -webkit-animation: loading 3.5s linear;
+            animation: loading 3.5s linear;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    background: radial-gradient(ellipse at top left, #9356DC, color-stop(100%));
+}
+.bloc
+{
+    opacity: 1;
+    -webkit-animation: apparition_page 3.5s;
+            animation: apparition_page 3.5s;
+}
+@-webkit-keyframes apparition_page {
+    0% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes loading {
+    0% {
+        -webkit-transform: rotate(0turn);
+                transform: rotate(0turn);
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: rotate(-1turn);
+        transform: rotate(-1turn);
+        opacity: 0;
+    }
+}
