@@ -13,3 +13,14 @@
     width: 200px;
     height: 200px;
     transform: rotate(180deg);}
+.pre{
+    animation:premouv 111.8s linear infinite, segmouv 50s linear;
+}
+
+@keyframes premouv {
+    from {width: 300px; height: 75px; top: 52px;}
+    to {width: 200px; height: 50px; top: 32px; }}
+@keyframes segmouv {
+    from {background-position: 0 0;}
+    to {background-position: 2000px 0;}
+}
